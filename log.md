@@ -4,7 +4,7 @@
 
 **architecture:** [cnn_arc_1](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/src/cnnarchitect.py)
 
-**validation accuracy:** 96.8
+**test accuracy:** 94.9
 
 **Hyperparameters:**
 
@@ -15,3 +15,8 @@
 TODO:
 * Add data augmentation
 * use ```from sklearn.model_selection import GridSearchCV``` to find out the best hyperparameters. [Reference](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html)
+
+Doubts:
+* First normalization or convert into gray scale? 
+        If normalization -> grayscale the accuracy is: 86
+        If grayscale -> normalization the accuracy is: 94.5+

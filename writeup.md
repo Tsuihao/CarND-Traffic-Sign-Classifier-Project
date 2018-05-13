@@ -76,12 +76,17 @@ Number of classes = 43<br>
 
 The distribution of training samples
 
-![alt text][training_sample_distribution]
+![alt text][training_samples_distribution]
 
 ### Design and Test a Model Architecture
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
+**[Image preprocessing]**
+
+reference: 
+* [Image Processing for Deep Learning](https://dziganto.github.io/deep%20learning/image%20processing/python/Image-Processing-for-Deep-Learning/) 1. rgb to gray 2. downsample 3. normalization
+* [Image Data Pre-Processing for Neural Networks](https://becominghuman.ai/image-data-pre-processing-for-neural-networks-498289068258) 1.uniform aspect ration 2. image scaling 3. normalization 4. rgb to gray 5. data augmentation
 
 Step 1: Convert rgb to grayscale based on this [reference](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf) and this [formula](https://en.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale)
 
@@ -93,7 +98,11 @@ Grayscale
 
 Step 2: Normalized the data
 
+[Naive normalization](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/src/preprocess.py)
+
 Step 3: Argumented the data
+
+**[Build up CNN architect]**
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
