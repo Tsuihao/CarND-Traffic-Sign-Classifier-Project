@@ -85,26 +85,15 @@ The distribution of training samples
 
 Step 1: Convert rgb to grayscale based on this [reference](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf) and this [formula](https://en.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale)
 
-Result: 
-
 RGB
 ![alt text][training_samples_rgb]
 
 Grayscale
 ![alt text][training_samples_grayscale]
 
-As a last step, I normalized the image data because ...
+Step 2: Normalized the data
 
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
-
+Step 3: Argumented the data
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
