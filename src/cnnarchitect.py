@@ -2,7 +2,6 @@ import tensorflow as tf
 from tensorflow.contrib.layers import flatten
 
 def cnn_arc_1(X, keep_prob=1.0):
-
     """
     6 layers of CNN structure, referenced from LetNet. However, based on the model technics, 
     * Reduce the patch/filter/kernel size
@@ -73,4 +72,17 @@ def cnn_arc_1(X, keep_prob=1.0):
     logits = FC_6
     
     return logits
-      
+
+
+
+def cnn_arc_2(X, keep_prob=1.0):
+    NotImplemented
+    """
+    Reference from the LetNet
+    conv_1
+    conv_2
+    FC_3
+    FC_4
+    FC_5
+    """
+    
