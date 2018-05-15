@@ -1,6 +1,9 @@
 import tensorflow as tf
 from tensorflow.contrib.layers import flatten
 
+#TODO: 
+# 1. Add namespace for tensorboard visualization
+
 def cnn_arc_1(X, keep_prob=1.0):
     """
     6 layers of CNN structure, referenced from LetNet. However, based on the model technics, 
@@ -74,7 +77,6 @@ def cnn_arc_1(X, keep_prob=1.0):
     return logits
 
 
-
 def cnn_arc_2(X, keep_prob=1.0):
     NotImplemented
     """
@@ -84,5 +86,12 @@ def cnn_arc_2(X, keep_prob=1.0):
     FC_3
     FC_4
     FC_5
+    """
+    
+    
+def cnn_arc_3(X, keep_prob=1.0):
+    NotImplemented
+    """
+    Reference from the VGG16
     """
     

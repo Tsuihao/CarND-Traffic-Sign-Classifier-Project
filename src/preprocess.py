@@ -16,3 +16,7 @@ def rgb_to_gray(X_rgb):
 #(pixel - 128)/ 128 is a quick way to approximately normalize the data and can be used in this project.
 def naive_normalization(X):
     return (X - 128)/128
+
+
+#TODO
+#- Add data augmentation
