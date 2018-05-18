@@ -1,4 +1,5 @@
 import numpy as np
+import cv2
 
 # Y' = 0.299 R + 0.587 G + 0.114 B 
 def rgb_to_gray(X_rgb):
@@ -18,5 +19,14 @@ def naive_normalization(X):
     return (X - 128)/128
 
 
-#TODO
-#- Add data augmentation
+
+def cv2_gray_n_normalize(img):
+    """
+    Using the embedded function in open cv to convert rgb into gray
+    Using the n-mean(n)/stdev(n)
+    """    
+    gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+    gray = (gray - np.mean(gray)) / (np.std(gray) + 1e-8) # normalization
+    gray = np.dstack([gray]).astype(np.float32)
+    return gray
+        

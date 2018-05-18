@@ -20,3 +20,18 @@ Doubts:
 * First normalization or convert into gray scale? 
         If normalization -> grayscale the accuracy is: 86
         If grayscale -> normalization the accuracy is: 94.5+
+---
+**17.May.2018**
+
+* Try with the different normalization method: [cv2_gray_n_normalize](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/src/preprocess.py)<br>
+ **result:** No difference!
+
+* Try with data augmentation: [dataaugmentation](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/src/dataaugmentation.py)<br>
+**result:** test accuracy from 94.9% ->96.2% (with same configuration, the only difference is batch size 128 -> 256 due to more data)
+        
+        
+---
+**Reference**:
+
+**Data augmentation**: https://github.com/AlphaLFC/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb
+
