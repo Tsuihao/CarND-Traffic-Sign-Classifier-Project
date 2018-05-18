@@ -7,24 +7,24 @@ Traffic sign recognition
 
 Dataset: [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)
 
-Be sure to download the [Ipython notebook](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb). 
-
-To meet specifications, the project will require submitting three files: 
-* the Ipython notebook with the code
-* the code exported as an html file
-* a writeup report either as a markdown or pdf file 
-
-
 
 The Project
 ---
 The goals / steps of this project are the following:
-* Load the data set
-* Explore, summarize and visualize the data set
-* Design, train and test a model architecture
+* Preprocess the dataset: convert to grayscale, normalization, augmentation. Check: **[preprocess](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/src/preprocess.py)** and **[dataaugmentation](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/src/dataaugmentation.py)**
+* Design, train and test a model architecture. Check: **[cnnarchitecture](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/src/cnnarchitect.py)**
 * Use the model to make predictions on new images
 * Analyze the softmax probabilities of the new images
-* Summarize the results with a written report
+* Summarize the results with a written report. Check: **[writeup](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/writeup.md)**
+
+
+### Result and Log
+
+Check here: **[Result](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/writeup.md)**
+
+Check here: **[Log](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/log.md)**
+
+---
 
 ### Dependencies
 This lab requires:
