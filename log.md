@@ -31,6 +31,11 @@ Doubts:
         
         
 ---
+**19.May.2018**
+
+* Check the  padding VALID and SAME
+
+---
 **Reference**:
 
 **Data augmentation**: https://github.com/AlphaLFC/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb
