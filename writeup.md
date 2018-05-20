@@ -15,15 +15,6 @@ The goals / steps of this project are the following:
 
 
 [//]: # (Image References)
-
-[image1]: ./images/validation1/1.png
-[image2]: ./images/validation1/2.png
-[image3]: ./images/validation1/3.png
-[image4]: ./images/validation1/5.png
-[image5]: ./images/validation1/6.png
-[image6]: ./images/validation1/8.png
-[image7]: ./images/validation1/9.png
-[image8]: ./images/validation1/10.png
 [all_new_test]: ./images/test8.png
 [training_samples_distribution]: ./images/dataset_original.png
 [augmented_distribution]: ./images/dataset_augmented.png
