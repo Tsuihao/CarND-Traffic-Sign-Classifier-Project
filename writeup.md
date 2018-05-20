@@ -14,7 +14,6 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 
-[//]: # (Image References)
 [all_new_test]: ./images/test8.png
 [training_samples_distribution]: ./images/dataset_original.png
 [augmented_distribution]: ./images/dataset_augmented.png
