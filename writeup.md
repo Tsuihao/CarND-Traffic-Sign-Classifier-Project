@@ -13,14 +13,13 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-
-[all_new_test]: ./images/test8.png
-[training_samples_distribution]: ./images/dataset_original.png
-[augmented_distribution]: ./images/dataset_augmented.png
-[training_samples_rgb]: ./images/training_samples_rgb.png
-[training_samples_grayscale]: ./images/training_samples_grayscale.png
-[top5]: ./images/top5.png
-[each_class]: ./images/each_class.png
+[all_new_test]: ./images/test8.png 
+[training_samples_distribution]: ./images/dataset_original.png 
+[augmented_distribution]: ./images/dataset_augmented.png 
+[training_samples_rgb]: ./images/training_samples_rgb.png 
+[training_samples_grayscale]: ./images/training_samples_grayscale.png 
+[top5]: ./images/top5.png 
+[each_class]: ./images/each_class.png 
 ---
 ## Definition of Done (DoD)/ Requirements: [rubric points](https://review.udacity.com/#!/rubrics/481/view) 
 
