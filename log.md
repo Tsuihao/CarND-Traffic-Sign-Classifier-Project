@@ -33,7 +33,17 @@ Doubts:
 ---
 **19.May.2018**
 
-* Check the  padding VALID and SAME
+* Check the padding VALID and SAME in tesorflow
+
+---
+
+**20.May.2018**
+* Refoctory the code into encapsulated class
+* Clean up the user interface
+* Add architect [arc_2](https://github.com/Tsuihao/CarND-Traffic-Sign-Classifier-Project/blob/master/src/cnnarchitect.py), search 'arc_2'
+* Hyperparameter tuning
+
+* **TODO**: Gridsearch
 
 ---
 **Reference**:
