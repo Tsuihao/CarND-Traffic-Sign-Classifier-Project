@@ -9,6 +9,7 @@
 [training_samples_grayscale]: ./images/training_samples_grayscale.png 
 [top5]: ./images/top5.png 
 [each_class]: ./images/each_class.png 
+[tensorboard_arc2]: ./images/tensorboard_arc2.png
 
 **Build a Traffic Sign Recognition Project**
 
@@ -121,14 +122,17 @@ My final model consisted of the following layers:
 | RELU                  |                                               |
 | Max pooling           | 2x2 stride, same padding, outputs 4x4x120     |
 | flatten               | outputs:1960                                  |
-| FC_4                  | outputs: 840                                  | 
+| FC_4                  | outputs: 840                                  |
+| Dropout               | keep_prob: 50%                                |
 | FC_5          		| outputs: 256        							|
+| Dropout               | keep_prob: 50%                                |
 | FC_6                  | outputs: 43                                   |
 | Softmax				| etc.        									|
 |						|												|
 |						|												|
  
-
+Visualization on **TensorBoard**
+![alt_text][tensorboard_arc2]
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
@@ -141,8 +145,8 @@ optimizer: Adam<br>
 
 My final model results were:
 * training set accuracy of ? 100.00%
-* validation set accuracy of ? 99.791%
-* test set accuracy of ? 95.90%
+* validation set accuracy of ? 99.781%
+* test set accuracy of ? 96.20%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen? <br>
@@ -172,7 +176,7 @@ Since the traffic sign is not a complex task to distingush, therefore, I think t
 
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?<br>
 training: 100.0% <br>
-validation: 99.791% >br?
+validation: 99.791% <br>
 test: 95.9%
  
 
@@ -181,6 +185,16 @@ test: 95.9%
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are 8 German traffic signs that I found on the web:
+I think none of them are hard to be correctly classified due to:
+* without distortion (except the 60 km/h has a bit)
+* good lighting condition
+* clear contour
+* comparative good quality
+* no multiple signs 
+* no background objects
+
+
+Therefore, in my opinion, **_my trained Net will perform well on all of these images_**.
 
 ![alt text][all_new_test]
 

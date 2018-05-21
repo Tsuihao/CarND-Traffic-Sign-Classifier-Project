@@ -109,7 +109,7 @@ class TrafficSignClassifier(BaseClassifyNet):
 
             with tf.variable_scope(name):
                 # Why tf.get_variable https://stackoverflow.com/questions/37098546/difference-between-variable-and-get-variable-in-tensorflow?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-                weights = tf.get_variable(name+'_w', kernel_size, initializer=initializer)
+                weights = tf.get_variable(name+'_w', kernel_size, initializer=w_initializer)
                 bias = tf.get_variable(name+'_b', [kernel_size[-1]], initializer = tf.constant_initializer(0.0))
 
             conv = tf.nn.conv2d(input, weights, stride, padding)
@@ -126,10 +126,10 @@ class TrafficSignClassifier(BaseClassifyNet):
         def _fc_layer(name, input, n_out, dropout=False, initializer=None):
             n_in = input.get_shape().as_list()[-1]  # input shape [None, cols]
             if initializer is None:
-                initializer=tf.truncated_normal_initializer(mean=0, stddev=0.1)
+                w_initializer=tf.truncated_normal_initializer(mean=0, stddev=0.1)
 
             with tf.variable_scope(name):
-                weights = tf.get_variable(name+'_w', [n_in, n_out], initializer=initializer)
+                weights = tf.get_variable(name+'_w', [n_in, n_out], initializer=w_initializer)
                 bias = tf.get_variable(name+'_b', [n_out], initializer = tf.constant_initializer(0.0))
                 fc = tf.matmul(input, weights) + bias
 

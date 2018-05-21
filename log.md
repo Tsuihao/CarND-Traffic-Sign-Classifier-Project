@@ -46,6 +46,14 @@ Doubts:
 * **TODO**: Gridsearch
 
 ---
+
+
+**21.May.2018**
+* Review finding from: [Here](https://review.udacity.com/?utm_medium=email&utm_campaign=ret_000_auto_ndxxx_submission-reviewed&utm_source=blueshift&utm_content=reviewsapp-submission-reviewed&bsft_clkid=631f0f99-967c-4000-b3ed-a9b6e0c62599&bsft_uid=1e07ff6b-26c2-40f5-8927-a5800725c305&bsft_mid=766e8c83-0199-44a4-a16e-54a264908e9f&bsft_eid=6f154690-7543-4582-9be7-e397af208dbd&bsft_txnid=e1b6f06f-541b-42ca-a9f3-f833b7e4023e#!/reviews/1230868)
+* Add Tensorboard images
+* Add desciption to new test images.
+
+---
 **Reference**:
 
 **Data augmentation**: https://github.com/AlphaLFC/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb
