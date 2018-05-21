@@ -2,14 +2,14 @@
 
 ## Writeup
 ---
-[all_new_test]: ./images/test8.png 
+[all_new_test]: ./images/test8.PNG 
 [training_samples_distribution]: ./images/dataset_original.png 
 [augmented_distribution]: ./images/dataset_augmented.png 
 [training_samples_rgb]: ./images/training_samples_rgb.png 
 [training_samples_grayscale]: ./images/training_samples_grayscale.png 
 [top5]: ./images/top5.png 
 [each_class]: ./images/each_class.png 
-[tensorboard_arc2]: ./images/tensorboard_arc2.png
+[tensorboard_arc2]: ./images/tensorboard_arc2.PNG 
 
 **Build a Traffic Sign Recognition Project**
 
@@ -136,9 +136,9 @@ Visualization on **TensorBoard**
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-learing_rate: 0.0003 <br>
+learing_rate: 0.0006 <br>
 batch_size: 256 <br>
-epochs: 60<br>
+epochs: 100<br>
 optimizer: Adam<br>
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
@@ -176,8 +176,8 @@ Since the traffic sign is not a complex task to distingush, therefore, I think t
 
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?<br>
 training: 100.0% <br>
-validation: 99.791% <br>
-test: 95.9%
+validation: 99.781% <br>
+test: 96.2%
  
 
 ### Test a Model on New Images
