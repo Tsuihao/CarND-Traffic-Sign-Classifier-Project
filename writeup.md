@@ -123,13 +123,15 @@ My final model consisted of the following layers:
 | Max pooling           | 2x2 stride, same padding, outputs 4x4x120     |
 | flatten               | outputs:1960                                  |
 | FC_4                  | outputs: 840                                  |
+| RELU                  |                                               |
 | Dropout               | keep_prob: 50%                                |
 | FC_5          		| outputs: 256        							|
+| RELU                  |                                               |
 | Dropout               | keep_prob: 50%                                |
 | FC_6                  | outputs: 43                                   |
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+| RELU                  |                                               |
+| Softmax				| Normalize the output         					|
+
  
 Visualization on **TensorBoard**
 ![alt_text][tensorboard_arc2]

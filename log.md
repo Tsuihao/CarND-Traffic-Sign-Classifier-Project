@@ -58,3 +58,6 @@ Doubts:
 
 **Data augmentation**: https://github.com/AlphaLFC/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb
 
+**Paper**: https://pdfs.semanticscholar.org/a27f/9defe663cca0793c21d9c6063e20743618bb.pdf
+
+

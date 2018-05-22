@@ -131,8 +131,9 @@ class TrafficSignClassifier(BaseClassifyNet):
             with tf.variable_scope(name):
                 weights = tf.get_variable(name+'_w', [n_in, n_out], initializer=w_initializer)
                 bias = tf.get_variable(name+'_b', [n_out], initializer = tf.constant_initializer(0.0))
-                fc = tf.matmul(input, weights) + bias
-
+            fc = tf.matmul(input, weights) + bias
+            fc = tf.nn.relu(fc)
+            
             if dropout:
                 fc = tf.nn.dropout(fc, keep_prob=self.keep_prob)
 
